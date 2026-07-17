@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://arcgpt.vercel.app"],
+    origin: [
+      "http://localhost:5173",
+      "https://arcgpt.vercel.app",
+      "https://arcgpt-git-main-ayannvermaa-7134s-projects.vercel.app",
+    ],
     methods: ["GET", "POST", "DELETE"],
     credentials: true,
   }),
